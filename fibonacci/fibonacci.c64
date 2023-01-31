@@ -1,0 +1,15 @@
+10 REM measure performance of mathematical problem in BASIC on C64
+20 REM define problem
+30 LET x = 0
+40 FOR i = 1 TO 1000
+50   LET x = x + i
+60 NEXT i
+70 REM print result
+80 PRINT x
+90 REM measure and print time
+100 LET t1 = TI
+110 FOR i = 1 TO 1000
+120   LET x = x + i
+130 NEXT i
+140 LET t2 = TI
+150 PRINT "Elapsed time:"; t2 - t1; "ms"
